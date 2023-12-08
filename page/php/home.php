@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "../../includes/connects.php";
+    $currentPage = 'HOME';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,8 @@
 <body>
     <?php include "bar.php"; ?>
     <main>
-        
+        <!-- DELETE LATER -->
+        <p>CLICK "PROFILE"</p>
     </main>
 </body>
 </html>

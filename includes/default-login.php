@@ -5,7 +5,8 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM `users`
+    $sql = "SELECT *, s.college, s.course, s.age, s.year FROM users u
+            JOIN students s ON u.studentID=s.studentID
             WHERE 
             password='$password'
             AND
@@ -20,6 +21,10 @@
         $_SESSION['webmail'] = $data['webmail'];
         $_SESSION['username'] = $data['username'];
         $_SESSION['password'] = $data['password'];
+        $_SESSION['college'] = $data['college'];
+        $_SESSION['course'] = $data['course'];
+        $_SESSION['age'] = $data['age'];
+        $_SESSION['year'] = $data['year'];
 
         header('Location: ../page/php/home.php');
     } else {

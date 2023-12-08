@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "../../includes/connects.php";
+    $currentPage = 'PROFILE';
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +20,25 @@
     <?php include "bar.php"; ?>
     <main>
         <div class="details">
-            <p><?php echo explode(' ', $_SESSION['name'])[0] . '<br>' . implode(' ', array_slice(explode(' ', $_SESSION['name']), 1)); ?></p>
+            <p><?php echo '<span>' . explode(' ', $_SESSION['name'])[0] . '</span><br>' . 
+            implode(' ', array_slice(explode(' ', $_SESSION['name']), 1)) . '<span>.</span>';?></p>
+            <p>A 
+                <?php echo $_SESSION['age']; ?> year old 
+                <?php echo ['first-year', 'second-year', 'third-year', 'fourt-year'][$_SESSION['year'] - 1]; ?> college student at the 
+                <?php echo $_SESSION['college'] === 'CE' 
+                    ? 'College of Engineering'
+                    : 'College of Architecture, Design and the Built Environment'; ?>, pursuing a 
+                <?php echo $_SESSION['course'];?></p>
+            <p><i class='bx bxs-user'></i><?php echo $_SESSION['username']; ?></p>
+            <p><i class='bx bxs-id-card'></i><?php echo $_SESSION['studentID']; ?></p>
+            <p><i class='bx bxs-envelope'></i><?php echo $_SESSION['webmail']; ?></p>
         </div>
-        <div class="profile"><img src="../../assets/image/sample-profile.png"></div>
+        <div class="profile">
+            <img src="../../assets/image/sample-profile.png">
+
+             <!-- DELETE LATER -->
+            <p>SAMPLE USER IMAGE</p>
+        </div>
     </main>
 </body>
 </html>

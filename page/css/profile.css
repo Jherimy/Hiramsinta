@@ -21,7 +21,6 @@ body {
 main {
     width: 100%;
     height: 80%;
-    background-color: rgba(226, 226, 226, 0.863);
     display: flex;
     justify-content: flex-end;
 }
@@ -30,9 +29,53 @@ main {
     width: 60%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.details p {
+    position: relative;
+    top: 12.5%;
+}
+
+.details p:nth-of-type(1) {
+    font-size: 14vh;
+    line-height: 0.85;
+    margin: 0 0 2.5% 17.5%;
+}
+
+.details p:nth-of-type(1) span:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 17vh;
+}
+
+.details p:nth-of-type(1) span:nth-of-type(2) {
+    background: linear-gradient( 
+    to right, #ffdf00, #daa520, #9b3a3a, #800000, #9b3a3a, 
+    #daa520, #ffdf00); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    background-size: 500% auto;
+    animation: textShine 3.5s ease-in-out infinite;
+}
+
+.details p:nth-of-type(2) {
+    width: 55%;
+    font-size: larger;
+    letter-spacing: 2px;
+    margin: 0 0 20px 18.5%;
+}
+
+.details p:nth-of-type(3), .details p:nth-of-type(4), .details p:nth-of-type(5) {
+    font-size: large;
+    letter-spacing: 2px;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: red;
+    margin: 0 0 5px 18.5%;
+}
+
+.details p i {
+    padding-right: 15px;
+    font-size: large;
 }
 
 .profile {
@@ -44,4 +87,11 @@ main {
     justify-content: center;
     font-weight: bold;
     overflow: hidden;
+}
+
+/* DELETE LATER */
+.profile p {
+    position: absolute;
+    font-weight: bold;
+    color: white;
 }

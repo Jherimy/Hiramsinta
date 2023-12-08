@@ -25,11 +25,12 @@
     <nav>
         <h1>Hiram<span>sinta.</span></h1>
         <div>
-            <p>HOME</p>
+            <p onclick="page(this)" <?php echo $currentPage === 'HOME' ? 'class="active"' : ''; ?>>HOME</p>
             <p>PRODUCTS</p>
             <p>ABOUT US</p>
             <p>CONTACT</p>
-            <p onclick="page(this)">PROFILE</p>
+            <p onclick="page(this)" <?php echo $currentPage === 'PROFILE' ? 'class="active"' : ''; ?>>PROFILE</p>
+            <p onclick="signout()">LOG OUT</p>
         </div>
     </nav>
     <script src="../js/bar.js"></script>

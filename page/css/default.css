@@ -122,18 +122,39 @@ main form div:nth-of-type(2) i:nth-of-type(2) {
     cursor: pointer;
 }
 
-main form div input[type='text'], main form div input[type='password'] {
+main form div input[type='text'], 
+main form div input[type='password'], 
+main form div input[type='number'],
+main form div select {
     border: none;
     background-color: transparent;
     height: 100%;
-    width: 76.5%;
     outline: none;
     color: white;
     letter-spacing: 2px;
     padding-left: 2.5%;
 }
 
-main form div input[type='text']::placeholder, main form div input[type='password']::placeholder {
+main form div input[type='text'], 
+main form div input[type='password'] {
+    width: 76.5%;
+}
+
+main form div input[type='number'] {
+    width: 82.5%;
+}
+
+main form div select {
+    width: 85.5%;
+}
+
+main form div select option{
+    color: black;
+}
+
+main form div input[type='text']::placeholder, 
+main form div input[type='password']::placeholder, 
+main form div input[type='number']::placeholder {
     color: white;
     letter-spacing: 2px;
 }
@@ -148,10 +169,10 @@ main form p:nth-of-type(2) {
 }
 
 main form input[type='submit'] {
-    border: none;
     width: 100%;
     height: 4.5vh;
     font-weight: bolder;
     letter-spacing: 1px;
     cursor: pointer;
+    border: 2px solid white;
 }
