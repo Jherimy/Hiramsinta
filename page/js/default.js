@@ -78,3 +78,16 @@ function register() {
         form.action = "../../includes/default-login.php";
     }
 }
+
+function passwordVisibility () {
+    const passwordIcon = document.querySelector('main form div:nth-of-type(2) i:nth-of-type(2)');
+    passwordIcon.className === 'bx bx-hide'
+        ? passwordIcon.className = 'bx bx-show'
+        : passwordIcon.className = 'bx bx-hide';
+
+
+    const inputPassword = document.querySelector('main form div:nth-of-type(2) input:nth-of-type(1)');
+    inputPassword.type === 'password'
+        ? inputPassword.type = 'text'
+        : inputPassword.type = 'password';
+}

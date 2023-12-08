@@ -34,7 +34,7 @@
             <div>
                 <i class='bx bx-lock-alt' ></i>
                 <input name="password" type="password" placeholder="Enter password" autocomplete="off" required>
-                <i class='bx bx-hide' ></i>
+                <i class='bx bx-hide' onclick="passwordVisibility()"></i>
             </div>
             <input type="submit" value="LOG IN">
         </form>
