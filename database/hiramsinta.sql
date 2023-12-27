@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2023 at 01:47 PM
+-- Generation Time: Dec 27, 2023 at 03:30 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,8 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`studentID`, `college`, `course`, `year`, `age`, `sex`) VALUES
 ('2021-05819-MN-0', 'CE', 'Bachelor of Science in Computer Engineering', 3, 20, 'Male'),
-('2021-05432-MN-0', 'CADBE', 'Bachelor of Science in Civil Engineering', 1, 21, 'Male');
+('2021-05432-MN-0', 'CADBE', 'Bachelor of Science in Architecture', 1, 21, 'Female'),
+('2021-05441-MN-0', 'CE', 'Bachelor of Science in Civil Engineering', 4, 22, 'Male');
 
 -- --------------------------------------------------------
 
@@ -65,7 +66,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `studentID`, `name`, `webmail`, `username`, `password`) VALUES
 (1, '2021-05819-MN-0', 'Jherimy Bernas', 'jherimys.bernas@iskolarngbayan.pup.edu.ph', 'sisondgaf', 'sison0524J'),
-(2, '2021-05432-MN-0', 'Juan Dela Cruz', 'juandelacruz@iskolarngbayan.pup.edu.ph', 'Juander', 'juantwothree');
+(2, '2021-05432-MN-0', 'Charlotte Quezada', 'charlottequezada@iskolarngbayan.pup.edu.ph', 'charlot', 'charlqt'),
+(3, '2021-05441-MN-0', 'Christian Yadao', 'christianyadao@iskolarngbayan.pup.edu.ph', 'Christian', 'christian');
 
 --
 -- Indexes for dumped tables
@@ -85,7 +87,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
