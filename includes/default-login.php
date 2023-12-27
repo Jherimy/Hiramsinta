@@ -25,6 +25,7 @@
         $_SESSION['course'] = $data['course'];
         $_SESSION['age'] = $data['age'];
         $_SESSION['year'] = $data['year'];
+        $_SESSION['sex'] = $data['sex'];
 
         header('Location: ../page/php/home.php');
     } else {

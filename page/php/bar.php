@@ -26,9 +26,9 @@
         <h1>Hiram<span>sinta.</span></h1>
         <div>
             <p onclick="page(this)" <?php echo $currentPage === 'HOME' ? 'class="active"' : ''; ?>>HOME</p>
-            <p>PRODUCTS</p>
-            <p>ABOUT US</p>
-            <p>CONTACT</p>
+            <p onclick="page(this)" <?php echo $currentPage === 'BORROW' ? 'class="active"' : ''; ?>>BORROW</p>
+            <p onclick="page(this)" <?php echo $currentPage === 'LEND' ? 'class="active"' : ''; ?>>LEND</p>
+            <p onclick="page(this)" <?php echo $currentPage === 'ABOUT US' ? 'class="active"' : ''; ?>>ABOUT US</p>
             <p onclick="page(this)" <?php echo $currentPage === 'PROFILE' ? 'class="active"' : ''; ?>>PROFILE</p>
             <p onclick="signout()">LOG OUT</p>
         </div>

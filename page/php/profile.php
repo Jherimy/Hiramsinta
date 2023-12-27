@@ -20,9 +20,9 @@
     <?php include "bar.php"; ?>
     <main>
         <div class="details">
-            <p><?php echo '<span>' . explode(' ', $_SESSION['name'])[0] . '</span><br>' . 
-            implode(' ', array_slice(explode(' ', $_SESSION['name']), 1)) . '<span>.</span>';?></p>
-            <p>A 
+            <p><?php echo explode(' ', $_SESSION['name'])[0] . '<span>.</span>';?></p>
+            <p>I'm
+                <?php echo $_SESSION['name']; ?>, a
                 <?php echo $_SESSION['age']; ?> year old 
                 <?php echo ['first-year', 'second-year', 'third-year', 'fourt-year'][$_SESSION['year'] - 1]; ?> college student at the 
                 <?php echo $_SESSION['college'] === 'CE' 
@@ -34,7 +34,7 @@
             <p><i class='bx bxs-envelope'></i><?php echo $_SESSION['webmail']; ?></p>
         </div>
         <div class="profile">
-            <img src="../../assets/image/sample-profile.png">
+            <img src="<?php echo $_SESSION['sex'] === 'Male' ? '../../assets/image/profile-male.png' : '../../assets/image/profile-female.png'?>">
 
              <!-- DELETE LATER -->
             <p>SAMPLE USER IMAGE</p>

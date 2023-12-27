@@ -89,7 +89,7 @@ nav {
 }
 
 nav h1:nth-of-type(1){
-    font-size: 6.5vh;
+    font-size: 50px;
     font-weight: 700;
     position: absolute;
     left: 15%;

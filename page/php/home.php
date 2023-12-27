@@ -19,8 +19,13 @@
 <body>
     <?php include "bar.php"; ?>
     <main>
-        <!-- DELETE LATER -->
-        <p>CLICK "PROFILE"</p>
+        <p>Shop With Us</p>
+        <p>This platform streamlines the borrowing process, emphasizing community collaboration. 
+            Lenders can choose to charge a fee or lend for free. </p>
+        <div>
+            <input type="submit" value="BORROW NOW">
+            <input type="submit" value="I WANT TO LEND">
+        </div>
     </main>
 </body>
 </html>
