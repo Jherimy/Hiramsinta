@@ -86,7 +86,6 @@ nav {
     align-items: center;
     justify-content: right;
     display: flex;
-    background-color: red;
 }
 
 nav h1:nth-of-type(1){
