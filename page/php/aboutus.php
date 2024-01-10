@@ -18,10 +18,19 @@
 </head>
 <body>
     <?php include "bar.php"; ?>
-    <main>
-       <div class="profile">
+    <section class="about">
+        <div class="main">
             <img src="../../assets/image/profile-male.png">
+            <div class="about-text">
+                <h1>Hiram<span>Sinta</span></h1>
+                    <h5>About us</h5>
+                <p>This website is a student-to-student equipment lending at PUP-CEA, Sta Mesa.
+                Our platform streamlines the borrowing process, emphasizing community collaboration.
+                Lenders can choose to change a fee or lend for free. Join us for a convenient 
+                and cooperative lending experience!</p>
+                <button type="button">Developers</button>
+            </div>
         </div>
-    </main>
+    </section>
 </body>
 </html>

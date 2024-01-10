@@ -10,46 +10,47 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'josefin Sans', sans-serif;
+    box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-}
-
-main {
+.about {
     width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
+    padding: 78px 0px;
 }
 
-.details {
-    width: 60%;
-    height: 100%;
+.about img{
+    height: autoi;
+    width: 420px;
+}
+.about-text {
+    width: 550px;
+} 
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.details p {
-    width: 55%;
-    bottom: 5%;
-    position: relative;
-}
-
-.details p:nth-of-type(1) {
-    font-size: 125px;
-    line-height: 0.85;
-    margin-bottom: 20px;
-    font-weight: bolder;
+.about-text h1{
+    color: black;
+    font-size: 80px;
     text-transform: capitalize;
-    left: -1%;
 }
 
-.details p:nth-of-type(1) span:nth-of-type(1) {
+.about-text h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+span{
     background: linear-gradient( 
     to right, #ffdf00, #daa520, #9b3a3a, #800000, #9b3a3a, 
     #daa520, #ffdf00); 
@@ -59,38 +60,28 @@ main {
     animation: textShine 3.5s ease-in-out infinite;
 }
 
-.details p:nth-of-type(2) {
-    font-size: larger;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
 }
 
-.details p:nth-of-type(3), .details p:nth-of-type(4), .details p:nth-of-type(5) {
-    font-size: large;
-    letter-spacing: 2px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.details p i {
-    padding-right: 15px;
-    font-size: large;
-}
-
-.profile {
-    width: 80vh;
-    height: 80vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-/* DELETE LATER */
-.profile p {
-    position: absolute;
-    font-weight: bold;
+button{
+    background: #9b3a3a;
+    font-size: 40px;
     color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #9b3a3a;
+    cursor: pointer;
+    color: black;
 }
