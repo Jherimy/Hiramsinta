@@ -24,11 +24,16 @@
             <div class="about-text">
                 <h1>Hiram<span>Sinta</span></h1>
                     <h5>About us</h5>
-                <p>This website is a student-to-student equipment lending at PUP-CEA, Sta Mesa.
-                Our platform streamlines the borrowing process, emphasizing community collaboration.
-                Lenders can choose to change a fee or lend for free. Join us for a convenient 
-                and cooperative lending experience!</p>
-                <button type="button">Developers</button>
+                <p>Welcome to <span>HiramSinta</span>, where lending meets community collaboration! 
+                    Our website is the go-to hub for student-to-student equipment lending
+                     at PUP-CEA, Sta. Mesa. We've revolutionized the borrowing process,
+                    making it seamless and emphasizing the power of community cooperation.</p>
+                <p> Here, lenders have the flexibility to choose whether to charge a fee or
+                     lend equipment for free. It's not just about borrowing; it's about 
+                     creating a supportive network within our student community. 
+                     <span>Join us on HiramSinta</span> for a lending experience that's not only convenient 
+                     but also fosters a spirit of collaboration. Together, let's make borrowing and lending a breeze!</p>
+                <a href="members.html"><button type="button">Developers</button></a>
             </div>
         </div>
     </section>

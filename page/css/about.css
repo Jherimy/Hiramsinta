@@ -7,6 +7,24 @@
     }
 }
 
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+}
+    100% {
+      width: 400px;
+      height: 150px;
+      opacity: 0;
+}
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;  
+    }
+}
 * {
     padding: 0;
     margin: 0;
@@ -16,11 +34,11 @@
 
 .about {
     width: 100%;
-    padding: 78px 0px;
+    padding: 20px 0px;
 }
 
 .about img{
-    height: autoi;
+    height: auto;
     width: 420px;
 }
 .about-text {
@@ -29,7 +47,7 @@
 
 .main{
     width: 1130px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -46,7 +64,7 @@
     color: black;
     font-size: 25px;
     text-transform: capitalize;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
@@ -63,25 +81,69 @@ span{
 .about-text p{
     letter-spacing: 1px;
     line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 button{
-    background: #9b3a3a;
-    font-size: 40px;
+    background: linear-gradient( to right, #800000, #9b3a3a); 
+    font-size: 25px;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
     padding: 12px 30px;
-    border-radius: 30px;
+    border-radius: 100px;
     transition: .4s;
+    margin-left: 346px;
 }
 
 button:hover {
     background: transparent;
-    border: 2px solid #9b3a3a;
     cursor: pointer;
     color: black;
 }
+
+button::before {
+	content: '';
+  border-radius: 100px;
+  min-width: calc(184px + 12px);
+  min-height: calc(40px + 12px);
+  border: 5px solid #9b3a3a;
+  box-shadow: 0 0 60px #ffdf00;
+  position: absolute;
+  top: 670px;
+  left: 1188px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: #ffdf00;
+    transform: translateY(-6px);
+  }
+   
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 5px; height: 4px;
+    border-radius: 100%;
+    border: 4px solid #ffdf00;
+    position: absolute;
+    z-index: -1;
+    top: 670px;
+    left: 1188px;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
