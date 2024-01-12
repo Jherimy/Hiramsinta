@@ -35,6 +35,7 @@ function register() {
         studentID.placeholder = 'Enter student ID';
         studentID.required = true;
         studentID.autocomplete = 'off';
+        studentID.spellcheck = 'false';
         studentIDDiv.appendChild(studentID);
 
         /// Name
@@ -49,6 +50,7 @@ function register() {
         studentName.placeholder = 'Enter name';
         studentName.required = true;
         studentName.autocomplete = 'off';
+        studentName.spellcheck = 'false';
         nameDiv.appendChild(studentName);
 
         /// Webmail
@@ -63,6 +65,7 @@ function register() {
         webmail.placeholder = 'Enter webmail';
         webmail.required = true;
         webmail.autocomplete = 'off';
+        webmail.spellcheck = 'false';
         webmailDiv.appendChild(webmail);
 
         /// Course
@@ -77,6 +80,7 @@ function register() {
         course.placeholder = 'Enter course';
         course.required = true;
         course.autocomplete = 'off';
+        course.spellcheck = 'false';
         courseDiv.appendChild(course);
 
         /// Age
