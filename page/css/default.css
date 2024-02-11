@@ -188,7 +188,7 @@ main form input[type='submit'] {
             background-position: 100% 50%;
         }
     }
-    
+
     body {
         width: 100vw;
         height: 100vh;
@@ -228,7 +228,7 @@ main form input[type='submit'] {
     }
     
     section p:nth-of-type(2) {
-        margin-top: 180px;
+        margin-top: -200px;
         font-size: 12px;
         letter-spacing: 2.5px;
         line-height: 1.5;
@@ -276,8 +276,9 @@ main form input[type='submit'] {
         align-items: center;
         flex-direction: column;
         gap: 2.5vh;
-        margin-top: -980px;
+        margin-top: 10px;
         margin-left: 30px;
+        margin-bottom: 20px;
     }
     
     main form p:nth-of-type(1) {
