@@ -18,7 +18,7 @@
 </head>
 <body>
     <?php include "bar.php"; ?>
-    <section class="about">
+    <main class="about">
         <div class="main">
             <img src="../../assets/image/profile-male.png">
             <div class="about-text">
@@ -36,6 +36,6 @@
                 <a href="members.html"><button type="button">Developers</button></a>
             </div>
         </div>
-    </section>
+</main>
 </body>
 </html>
