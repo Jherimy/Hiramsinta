@@ -5,8 +5,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT *, s.college, s.course, s.age, s.year FROM users u
-            JOIN students s ON u.studentID=s.studentID
+    $sql = "SELECT * FROM students
             WHERE 
             password='$password'
             AND
@@ -17,7 +16,7 @@
     if (mysqli_num_rows($query) != 0) {
         $data = mysqli_fetch_assoc($query);
         $_SESSION['studentID'] = $data['studentID'];
-        $_SESSION['name'] = $data['name'];
+        $_SESSION['name'] = $data['studentname'];
         $_SESSION['webmail'] = $data['webmail'];
         $_SESSION['username'] = $data['username'];
         $_SESSION['password'] = $data['password'];

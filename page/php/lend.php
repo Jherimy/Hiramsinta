@@ -19,15 +19,15 @@
 <body>
     <?php include "bar.php"; ?>
     <main>
-        <form action="../../includes/lend-submit.php" method="POST">  
+        <form action="../../includes/lend-submit.php" method="POST" enctype="multipart/form-data">  
             <div>
                 <img>
                 <label for="lendImage" onclick="uploadImage()"><i class='bx bxs-cloud-upload' ></i>UPLOAD PRODUCT</label>
-                <input type="file" name="lendImage" accept="image/png, image/jpg, image/gif, image/jpeg" onchange="changeImage()" required>
+                <input type="file" name="lendImage" accept=".png, .jpg, .gif, .jpeg" onchange="changeImage()" required>
             </div>
             <div>
                 <p><?php echo $_SESSION['name'] ?></p>
-                <input type="text" name="lendName" placeholder="ENTER ITEM NAME" autocomplete="off" spellcheck="false" required>
+                <input type="text" name="lendItem" placeholder="ENTER ITEM NAME" autocomplete="off" spellcheck="false" required>
                 <textarea name="lendDescription" placeholder="DESCRIPTION" autocomplete="off" data-gramm='false' spellcheck="false" required></textarea>
                 <label>
                     <i class='bx bxs-edit-location'></i>

@@ -2,29 +2,38 @@
     session_start();
     include "connects.php";
 
-    $lender = $_SESSION['studentID'];
+    date_default_timezone_set('Asia/Manila');
 
-    $lendImage = $_POST['lendImage'];
-    $lendName = $_POST['lendName'];
+    $lenderID = $_SESSION['studentID'];
+    $lendItem = $_POST['lendItem'];
     $lendDescription = $_POST['lendDescription'];
     $lendPlace = $_POST['lendPlace'];
+    $lendDate = date("Y-m-d");
+    $lendTime = date("H:i:s");
     $lendPrice = $_POST['lendPrice'];
 
-    $sql = "INSERT INTO `users`
-            (`studentID`, `name`, `webmail`, `username`, `password`)
+    $lendImage = $_FILES['lendImage'];
+    $imageName = $lendImage['name'];
+    $imageTemp = $lendImage['tmp_name'];
+    $imageExt = explode('.', $imageName);;
+    $imageActualExt = strtolower(end($imageExt));
+
+    $imageNewName = uniqid('', true) . "." . $imageActualExt;   
+    $imagePath = '../uploads/item/' . $imageNewName;
+    move_uploaded_file($imageTemp, $imagePath);
+
+
+    $sql = "INSERT INTO `lend`
+            (`lenderID`, `item`, `description`, `place`, `lenddate`, `lendtime`, `price`, `image`)
             VALUES
-            ('$studentID', '$name', '$webmail', '$username', '$password');
-            INSERT INTO `students`
-            (`studentID`, `college`, `course`, `year`, `age`, `sex`) 
-            VALUES 
-            ('$studentID','$college','$course','$year','$age','$sex')";
+            ('$lenderID', '$lendItem', '$lendDescription', '$lendPlace', '$lendDate', '$lendTime', '$lendPrice', '$imagePath');";
 
     $query = mysqli_multi_query($connect, $sql);
 
     if ($query === TRUE) {
-        header('Location: ../page/php/default.php');
+        header('Location: ../page/php/lend.php');
     } else {
-        header('Location: ../page/php/default.php');
+        header('Location: ../page/php/lend.php');
     };
     mysqli_close($connect);
 ?>

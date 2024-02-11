@@ -13,14 +13,10 @@
     $college = $_POST['college'];
     $course = $_POST['course'];
 
-    $sql = "INSERT INTO `users`
-            (`studentID`, `name`, `webmail`, `username`, `password`)
+    $sql = "INSERT INTO `students`
+            (`studentID`, `studentname`, `webmail`, `username`, `password`, `college`, `course`, `year`, `age`, `sex`)
             VALUES
-            ('$studentID', '$name', '$webmail', '$username', '$password');
-            INSERT INTO `students`
-            (`studentID`, `college`, `course`, `year`, `age`, `sex`) 
-            VALUES 
-            ('$studentID','$college','$course','$year','$age','$sex')";
+            ('$studentID', '$name', '$webmail', '$username', '$password', '$college', '$course', '$year', '$age', '$sex')";
 
     $query = mysqli_multi_query($connect, $sql);
 
