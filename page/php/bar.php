@@ -23,7 +23,7 @@
         <p>@hiramsinta@gmail.com</p>
     </header>
     <nav>
-        <h1>Hiram<span>sinta.</span></h1>
+        <h1>Hiram<span>Sinta</span></h1>
         <div>
             <p onclick="page(this)" <?php echo $currentPage === 'HOME' ? 'class="active"' : ''; ?>>HOME</p>
             <p onclick="page(this)" <?php echo $currentPage === 'BORROW' ? 'class="active"' : ''; ?>>BORROW</p>
