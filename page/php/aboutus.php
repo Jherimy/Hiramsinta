@@ -33,7 +33,7 @@
                      creating a supportive network within our student community. 
                      <span>Join us on HiramSinta</span> for a lending experience that's not only convenient 
                      but also fosters a spirit of collaboration. Together, let's make borrowing and lending a breeze!</p>
-                <a href="members.html"><button type="button">Developers</button></a>
+                <a href="../../assets/image/HiramSinta.mp4"><button type="button">Developers</button></a>
             </div>
         </div>
 </main>

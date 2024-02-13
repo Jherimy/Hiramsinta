@@ -39,6 +39,9 @@
                 <p>FREE TO RENT? LEAVE IT BLANK OR ENTER 0</p>
                 <input type="submit" value="LEND ITEM">
             </div>
+            <div onclick="showLend()">  
+                <i class='bx bxs-notification'></i>
+            </div>
         </form>
     </main>
     <script src="../js/lend.js"></script>

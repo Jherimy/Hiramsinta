@@ -67,6 +67,9 @@ $result = mysqli_query($connect, $query);
                     </div>
                 <?php } ?>
             </div>
+            <div class="borrowBag">
+                <i class='bx bxs-shopping-bag'></i>
+            </div>
         </form>
     </main>
     <script src="../js/borrow.js"></script>

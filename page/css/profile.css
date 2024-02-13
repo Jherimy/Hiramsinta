@@ -35,15 +35,13 @@ main {
 }
 
 .details p {
-    width: 65%;
+    width: 55%;
     bottom: 5%;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     position: relative;
 }
 
 .details p:nth-of-type(1) {
     font-size: 125px;
-    font-family: 'Playfair Display';
     line-height: 0.85;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -74,9 +72,6 @@ main {
     align-items: center;
     margin-bottom: 5px;
 }
-.details p:nth-of-type(5) {
-    letter-spacing: -1px;
-}
 
 .details p i {
     padding-right: 15px;
@@ -84,7 +79,7 @@ main {
 }
 
 .profile {
-    width: 80vw;
+    width: 80vh;
     height: 80vh;
     background-color: white;
     display: flex;
