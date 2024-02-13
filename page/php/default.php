@@ -29,11 +29,11 @@
             <p>WELCOME BACK!</p>
             <div>
                 <i class='bx bx-user' ></i>
-                <input name="username" type="text" placeholder="Enter username or webmail" autocomplete="off" require>
+                <input name="username" type="text" placeholder="Enter username or webmail" autocomplete="off" spellcheck="false" required>
             </div>
             <div>
                 <i class='bx bx-lock-alt' ></i>
-                <input name="password" type="password" placeholder="Enter password" autocomplete="off" required>
+                <input name="password" type="password" placeholder="Enter password" autocomplete="off" spellcheck="false" required>
                 <i class='bx bx-hide' onclick="passwordVisibility()"></i>
             </div>
             <input type="submit" value="LOG IN">

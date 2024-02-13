@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
-    <title>HOME</title>
+    <title>PROFILE</title>
     <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
@@ -35,9 +35,6 @@
         </div>
         <div class="profile">
             <img src="<?php echo $_SESSION['sex'] === 'Male' ? '../../assets/image/profile-male.png' : '../../assets/image/profile-female.png'?>">
-
-             <!-- DELETE LATER -->
-            <p>SAMPLE USER IMAGE</p>
         </div>
     </main>
 </body>
