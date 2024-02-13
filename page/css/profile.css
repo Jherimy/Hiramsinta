@@ -93,13 +93,6 @@ main {
     overflow: hidden;
 }
 
-/* DELETE LATER */
-.profile p {
-    position: absolute;
-    font-weight: bold;
-    color: white;
-}
-
 @media (max-width: 600px) {
     @keyframes textShine {
         0% {
@@ -202,15 +195,6 @@ main {
         align-items: center;
         justify-content: center;
     }
-    
-    /* DELETE LATER */
-    .profile p {
-        position: absolute;
-        font-weight: bold;
-        color: white;
-    }
-    
-    
 }
 
 
@@ -318,14 +302,6 @@ main {
         align-items: center;
         justify-content: center;
     }
-    
-    /* DELETE LATER */
-    .profile p {
-        position: absolute;
-        font-weight: bold;
-        color: white;
-    }
-    
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -428,13 +404,6 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    /* DELETE LATER */
-    .profile p {
-        position: absolute;
-        font-weight: bold;
-        color: white;
     }
 }
 
