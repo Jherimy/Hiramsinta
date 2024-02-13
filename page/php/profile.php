@@ -35,9 +35,6 @@
         </div>
         <div class="profile">
             <img src="<?php echo $_SESSION['sex'] === 'Male' ? '../../assets/image/profile-male.png' : '../../assets/image/profile-female.png'?>">
-
-             <!-- DELETE LATER -->
-            <p>SAMPLE USER IMAGE</p>
         </div>
     </main>
 </body>

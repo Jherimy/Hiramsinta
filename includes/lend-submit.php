@@ -24,7 +24,7 @@
 
 
     $sql = "INSERT INTO `lend`
-            (`lenderID`, `item`, `description`, `place`, `lenddate`, `lendtime`, `price`, `image`)
+            (`lenderID`, `item`, `description`, `place`, `date`, `time`, `price`, `image`)
             VALUES
             ('$lenderID', '$lendItem', '$lendDescription', '$lendPlace', '$lendDate', '$lendTime', '$lendPrice', '$imagePath');";
 

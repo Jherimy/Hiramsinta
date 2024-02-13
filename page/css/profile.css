@@ -87,10 +87,3 @@ main {
     justify-content: center;
     overflow: hidden;
 }
-
-/* DELETE LATER */
-.profile p {
-    position: absolute;
-    font-weight: bold;
-    color: white;
-}

@@ -27,7 +27,7 @@ main {
     background-color: rgb(235, 235, 235);
 }
 
-main form {
+.mainForm {
     width: 100%;
     height: 90%;
     display: flex;
@@ -36,7 +36,7 @@ main form {
     flex-direction: column;
 }
 
-main form label {
+.mainForm label {
     width: 65%;
     height: 45px;
     padding: 0 2.5% 0 2.5%;
@@ -48,7 +48,7 @@ main form label {
     display: flex;
 }
 
-main form label input[type='text'] {
+.mainForm label input[type='text'] {
     width: 100%;
     height: 45px;
     border: none;
@@ -60,11 +60,11 @@ main form label input[type='text'] {
     letter-spacing: 1px;
 }
 
-main form label input::placeholder {
+.mainForm label input::placeholder {
     color: rgb(200, 200, 200);
 }
 
-main form label i {
+.mainForm label i {
     position: absolute;
     right: 0;
     font-weight: 1000;
@@ -75,7 +75,7 @@ main form label i {
     border-left: 2px solid rgb(200, 200, 200);
 }
 
-main form label i:hover {
+.mainForm label i:hover {
     background: linear-gradient( 
     to right, #ffdf00, #daa520, #9b3a3a, #800000, #9b3a3a, 
     #daa520, #ffdf00); 
@@ -85,22 +85,24 @@ main form label i:hover {
     animation: textShine 3.5s ease-in-out infinite;
 }
 
-.filter {
+.sort {
     width: 68%; 
     height: 20px;
     display: flex;
     gap: 35px;
-    font-size: large;
-    font-weight: bold;
     letter-spacing: 1px;
     padding: 0 1% 0 1%;
 }
 
-.filter p {
+.sort input {
+    border: none;
+    font-size: large;
+    font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.filter p:nth-of-type(3) {
+.sort input:nth-of-type(3) {
     margin-right: 50px;
 }
 
@@ -150,7 +152,7 @@ main form label i:hover {
     overflow: hidden;
 }
 
-.itemlist div:hover p:nth-of-type(1), .itemlist div:hover p:nth-of-type(3), .filter p:hover {
+.itemlist div:hover p:nth-of-type(1), .itemlist div:hover p:nth-of-type(3), .sort p:hover {
     background: linear-gradient( 
     to right, #ffdf00, #daa520, #9b3a3a, #800000, #9b3a3a, 
     #daa520, #ffdf00); 
@@ -178,6 +180,12 @@ main form label i:hover {
     font-weight: bolder;
 }
 
+.itemlist div p:nth-of-type(3) span {
+    padding-left: 10px;
+    font-size: x-small;
+    color: rgb(150, 150, 150);
+}
+
 .itemlist div p:nth-of-type(4) {
     padding-top: 2px;
     font-size: small;
@@ -201,8 +209,7 @@ main form label i:hover {
 
 
 
-
-.sort {
+.filter {
     background: linear-gradient( 
     to right, #ffdf00, #daa520, #9b3a3a, #800000, #9b3a3a, 
     #daa520, #ffdf00); 

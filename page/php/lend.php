@@ -36,7 +36,7 @@
                 <label><span>₱</span>
                     <input type="number" name="lendPrice" min="0" oninput="resizeInput(this)">
                 </label>
-                <p>MAKE IT FREE? LEAVE IT BLANK OR ENTER 0</p>
+                <p>FREE TO RENT? LEAVE IT BLANK OR ENTER 0</p>
                 <input type="submit" value="LEND ITEM">
             </div>
         </form>
