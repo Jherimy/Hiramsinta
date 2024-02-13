@@ -19,13 +19,14 @@
 <body>
     <?php include "bar.php"; ?>
     <main>
-        <p>Shop With Us</p>
+        <p>Share With Us</p>
         <p>This platform streamlines the borrowing process, emphasizing community collaboration. 
             Lenders can choose to charge a fee or lend for free. </p>
         <div>
-            <input type="submit" value="BORROW NOW">
-            <input type="submit" value="I WANT TO LEND">
+            <input type="submit" onclick="shortcut(this)" name="BORROW" value="BORROW NOW">
+            <input type="submit" onclick="shortcut(this)" name="LEND" value="I WANT TO LEND">
         </div>
     </main>
+    <script src="../js/home.js"></script>
 </body>
 </html>
